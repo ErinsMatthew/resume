@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "handlebars": "^4.7.7",
     "node-json2html": "^2.2.3"
   }
 }

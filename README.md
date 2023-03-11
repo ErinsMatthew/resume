@@ -41,6 +41,8 @@ converts the input to the output is up to it to determine.
 - `find` - pre-installed with macOS and most Linux distributions
 - `realpath` - install via coreutils using [Homebrew](https://formulae.brew.sh/formula/coreutils), another package manager, or [manually](https://www.gnu.org/software/coreutils/).
 
+Formatters may have their own dependencies.
+
 ## Platform Support
 
 This script was tested on macOS Monterey (12.6) using GNU Bash 5.2.15,

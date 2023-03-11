@@ -308,6 +308,6 @@ awards:
 publications:
   - journal: IEEE Transactions on Magnetics
     url: https://ieeexplore.ieee.org/document/717707
-    citation: Larry R. Turner and Matthew W. Foster, "Modeling Forces in High-Temperature Superconductors,"" IEEE Trans. Magn. vol. 34, no. 5, pp. 3024-3027, 1998
-    description: Published results of research on high-temperature superconductors.
+    citation: Larry R. Turner and Matthew W. Foster, "Modeling Forces in High-Temperature Superconductors," IEEE Trans. Magn. vol. 34, no. 5, pp. 3024-3027, 1998
+    description: Published results of research on high-temperature superconductors while at Argonne National Laboratory.
     when: 1998-09

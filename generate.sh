@@ -12,7 +12,7 @@ Usage: generate.sh [-d] [-f fmt] [-b basename] dir
 OPTIONS
 =======
 -b basename  use 'basename' for output file; default: resume
--f fmt       format option: one of: html, pdf, docx; default: pdf
+-f fmt       format option: a valid formatter or 'all'; default: pdf
 -d           output debug information
 -i fn        use 'fn' for input file; default: matthew.yml
 -h           show help
@@ -50,9 +50,7 @@ debug() {
 }
 
 loadValidFormatters() {
-    GLOBALS[VALID_FORMATTERS]=$(find "${GLOBALS[FORMATTERS_DIR]}" -depth 2 -type f -name format.sh -print0 | xargs -0 -I{} dirname {} | xargs -I{} basename {} | tr '\n' '|' | sed -e 's/|$//')
-
-    debug "Valid formatters set to '${GLOBALS[VALID_FORMATTERS]}'."
+    GLOBALS[VALID_FORMATTERS]=$(find "${GLOBALS[FORMATTERS_DIR]}" -depth 2 -type f -name format.sh -print0 | xargs -0 -I{} dirname {} | xargs -I{} basename {} | grep -v 'all' | tr '\n' '|' | sed -e 's/|$//')
 }
 
 processOptions() {
@@ -73,7 +71,11 @@ processOptions() {
                 ;;
 
             f)
-                if [[ ${OPTARG} == @(${GLOBALS[VALID_FORMATTERS]}) ]]; then
+                if [[ ${OPTARG} == 'all' ]]; then
+                    GLOBALS[FORMAT]='all'
+
+                    debug "Generating all formats."
+                elif [[ ${OPTARG} == @(${GLOBALS[VALID_FORMATTERS]}) ]]; then
                     GLOBALS[FORMAT]=${OPTARG}
 
                     debug "Setting format to '${GLOBALS[FORMAT]}'."
@@ -109,6 +111,8 @@ validateInputs() {
 
         usage
     fi
+
+    debug "Valid formatters set to '${GLOBALS[VALID_FORMATTERS]}'."
 }
 
 setDefaults() {
@@ -163,12 +167,32 @@ performSetup() {
     dependencyCheck "cat find realpath"
 }
 
-generateResume() {
+formatResume() {
     local OUTPUT_FILE
 
-    OUTPUT_FILE=${GLOBALS[OUTPUT_DIR]}/${GLOBALS[BASENAME]}.${GLOBALS[FORMAT]}
+    OUTPUT_FILE=${GLOBALS[OUTPUT_DIR]}/${GLOBALS[BASENAME]}.$1
 
-    eval "${GLOBALS[FORMATTERS_DIR]}/${GLOBALS[FORMAT]}/format.sh '${GLOBALS[INPUT_FILE]}' '${OUTPUT_FILE}'"
+    debug "Formatting resume '${OUTPUT_FILE}'."
+
+    eval "${GLOBALS[FORMATTERS_DIR]}/$1/format.sh '${GLOBALS[INPUT_FILE]}' '${OUTPUT_FILE}'"
+}
+
+generateResume() {
+    local FORMAT
+
+    if [[ ${GLOBALS[FORMAT]} == 'all' ]]; then
+        OIFS=${IFS}
+
+        IFS=\|
+
+        for FORMAT in ${GLOBALS[VALID_FORMATTERS]}; do
+            formatResume "${FORMAT}"
+        done
+
+        IFS=${OIFS}
+    else
+        formatResume "${GLOBALS[FORMAT]}"
+    fi
 }
 
 performSetup "$@"
