@@ -2,7 +2,8 @@ body {
     width: 90%;
     max-width: 900px;
     margin: 2em auto;
-    font: .9em/1.2 Arial, Helvetica, sans-serif;
+    /*font: .9em/1.2 Arial, Helvetica, sans-serif;*/
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #qualifications {
@@ -12,12 +13,27 @@ body {
     gap: 5px;
 }
 
+header {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    text-align: center;
+}
+
+article {
+    grid-column: 1 / 3;
+    grid-row: 2;
+}
+
 .name {
     font-weight: bold;
 }
 
 .dateRange {
     text-align: right;
+}
+
+div.position {
+    padding-bottom: 20px;
 }
 
 span.company {

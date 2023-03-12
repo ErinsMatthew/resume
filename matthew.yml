@@ -27,8 +27,7 @@ experience:
         industryTitle: Principal Software Engineer
         team: Information Security Identity and Access Management
         location: Bentonville, Arkansas
-        from:
-        to: Present
+        from: 2020-01
         responsibilities:
           - abc
           - def
@@ -38,7 +37,7 @@ experience:
         team: Supplier and Spend Solutions
         location: Bentonville, Arkansas
         from: 2017-02
-        to:
+        to: 2020-01
         responsibilities:
           - Responsible for front-end innovations within the end-to-end supplier and spend solutions portfolio, which covers all indirect spend for all of Walmart (GNFR).
           - Lead key efforts for process simplification and automation, including contractor onboarding, request management, reporting and analytics, global process alignment, and business planning.
@@ -197,9 +196,9 @@ skills:
     - Unified Modeling Language (UML)
     - Software Development Life Cycles (SDLC)
     - Twelve-Factor Application Design
-    - Identity Lifecycle & Governance
+    - Identity Lifecycle
     - Authentication (AuthN) & Authorization (AuthZ)
-    - Multi-factor Authentication
+    - Multifactor Authentication
   applications:
     - Microsoft Office Suite
     - Microsoft Access
@@ -279,12 +278,9 @@ certifications:
     to: 2012-11
   - issuer: International Information System Security Certification Consortium (ISC)2
     title: Certified Information Systems Security Professional (CISSP ®)
-    from:
-    to: Present
   - issuer: Walmart
     title: Professional Project Leadership Series Certificate
     from: 2005-01
-    to: Present
 
 awards:
   - from: Walmart

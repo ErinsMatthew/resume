@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dayjs": "^1.11.7",
     "handlebars": "^4.7.7",
     "node-json2html": "^2.2.3"
   }

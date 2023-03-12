@@ -10,90 +10,94 @@
 </head>
 
 <body>
-    <span class="name">{{name}}</span>
-    <span class="linkedin"><a href="{{linkedin}}" target="_new">{{linkedin}}</a></span>
+    <header>
+        <span class="name">{{name}}</span>
+        <span class="linkedin"><a href="{{linkedin}}" target="_new">{{linkedin}}</a></span>
+    </header>
 
-    <br />
-    {{#with summary}}
-    <h2>{{title}}</h2>
+    <article>
+        {{#with summary}}
+        <h2>{{title}}</h2>
 
-    <div id="recap">
-        {{recap}}
-    </div>
+        <div id="recap">
+            {{recap}}
+        </div>
 
-    <div id="qualifications">
-        {{#each qualifications}}<div>&FilledVerySmallSquare;&nbsp;{{.}}</div>{{/each}}
-    </div>
-    {{/with}}
+        <div id="qualifications">
+            {{#each qualifications}}<div>&FilledVerySmallSquare;&nbsp;{{.}}</div>{{/each}}
+        </div>
+        {{/with}}
 
-    {{#each experience}}
-    <table>
-        <tbody>
-            <tr>
-                <td colspan="2"><span class="company">{{company}}</span>&nbsp;(<span
-                        class="location">{{positions.[0].location}}</span>)</td>
-            </tr>
+        {{#each experience}}
+        <div class="experience">
+            <div class="experience_summary">
+                <span class="company">{{company}}</span>&nbsp;(<span class="location">{{positions.[0].location}}</span>)
+            </div>
 
             {{#each positions}}
-            <tr>
-                <td><span class="title">{{title}}</span>{{#if team}},&nbsp;<span class="team">{{team}}</span>{{/if}}
-                </td>
-                <td class="dateRange">{{from}}&nbsp;to&nbsp;{{#if to}}{{to}}{{else}}Present{{/if}}</td>
-            </tr>
+            <div class="position">
+                <div class="role"><span class="title">{{title}}</span>{{#if team}},&nbsp;<span
+                        class="team">{{team}}</span>{{/if}}</div>
+                <div class="dateRange">{{date from}}&nbsp;to&nbsp;{{#if to}}{{date to}}{{else}}Present{{/if}}
+                </div>
 
-            {{#each responsibilities}}
-            <tr>
-                <td colspan="2">&bullet;&nbsp{{.}}</td>
-            </tr>
+                {{#if responsibilities}}
+                <div class="responsibilities">
+                    {{#each responsibilities}}
+                    <div class="responsibility">
+                        <div>&bullet;&nbsp{{.}}</div>
+                    </div>
+                    {{/each}}
+                </div>
+                {{/if}}
+            </div>
             {{/each}}
+        </div>
+        {{/each}}
 
+        <h2>Awards, Accomplishments, Certifications</h2>
+        <ul>
+            {{#each awards}}
+            <li><span class="issuer">{{from}}</span>:&nbsp;{{description}}&nbsp;({{date when}})</li>
             {{/each}}
-        </tbody>
-    </table>
-    {{/each}}
-
-    <h2>Awards, Accomplishments, Certifications</h2>
-    {{#if awards}}
-    <ul>
-        {{#each awards}}
-        <li><span class="issuer">{{from}}</span>:&nbsp;{{description}}&nbsp;({{when}})</li>
-        {{/each}}
-        {{#each certifications}}
-        <li><span class="issuer">{{issuer}}</span>:&nbsp;{{title}}&nbsp;({{from}}{{#if
-            to}}&nbsp;to&nbsp;{{to}}{{/if}})
-        </li>
-        {{/each}}
-        {{#each publications}}
-        <li><span class="issuer">{{journal}}</span>:&nbsp;{{description}},&nbsp;<a href="{{url}}"
-                target="_new">{{citation}}</a>&nbsp;({{when}})</li>
-        {{/each}}
-    </ul>
-    {{/if}}
-
-    <h2>Technical Skills</h2>
-    <ul>
-        <li>Concepts:&nbsp;{{#each skills.concepts}}{{.}},&nbsp;{{/each}}</li>
-        <li>Applications:&nbsp;{{#each skills.applications}}{{.}},&nbsp;{{/each}}</li>
-        <li>Platforms:&nbsp;{{#each skills.platforms}}{{.}},&nbsp;{{/each}}</li>
-        <li>Databases:&nbsp;{{#each skills.databases}}{{.}},&nbsp;{{/each}}</li>
-        <li>Programming:&nbsp;{{#each skills.programming}}{{.}},&nbsp;{{/each}}</li>
-        <li>Operating&nbsp;Systems:&nbsp;{{#each skills.os}}{{.}},&nbsp;{{/each}}</li>
-    </ul>
-
-    <h2>Education</h2>
-    <table>
-        <tbody>
-            {{#each education}}
-            <tr>
-                <td colspan="2">{{school}}&nbsp;({{location}})</td>
-            </tr>
-            <tr>
-                <td>{{degree}},&nbsp;{{subject}}</td>
-                <td>{{from}}&nbsp;to&nbsp;{{to}}</td>
-            </tr>
+            {{#each certifications}}
+            {{#if from}}
+            <li><span class="issuer">{{issuer}}</span>:&nbsp;{{title}}&nbsp;({{date from}}{{#if
+                to}}&nbsp;to&nbsp;{{date to}}{{/if}})
+            </li>
+            {{/if}}
             {{/each}}
-        </tbody>
-    </table>
+            {{#each publications}}
+            <li><span class="issuer">{{journal}}</span>:&nbsp;{{description}},&nbsp;<a href="{{url}}"
+                    target="_new">{{citation}}</a>&nbsp;({{date when}})</li>
+            {{/each}}
+        </ul>
+
+        <h2>Technical Skills</h2>
+        <ul>
+            <li><b>Concepts:</b>&nbsp;{{#each skills.concepts}}{{.}},&nbsp;{{/each}}</li>
+            <li><b>Applications:</b>&nbsp;{{#each skills.applications}}{{.}},&nbsp;{{/each}}</li>
+            <li><b>Platforms:</b>&nbsp;{{#each skills.platforms}}{{.}},&nbsp;{{/each}}</li>
+            <li><b>Databases:</b>&nbsp;{{#each skills.databases}}{{.}},&nbsp;{{/each}}</li>
+            <li><b>Programming:</b>&nbsp;{{#each skills.programming}}{{.}},&nbsp;{{/each}}</li>
+            <li><b>Operating&nbsp;Systems:</b>&nbsp;{{#each skills.os}}{{.}},&nbsp;{{/each}}</li>
+        </ul>
+
+        <h2>Education</h2>
+        <table>
+            <tbody>
+                {{#each education}}
+                <tr>
+                    <td colspan="2">{{school}}&nbsp;({{location}})</td>
+                </tr>
+                <tr>
+                    <td>{{degree}},&nbsp;{{subject}}</td>
+                    <td>{{date from}}&nbsp;to&nbsp;{{date to}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </article>
 </body>
 
 </html>
