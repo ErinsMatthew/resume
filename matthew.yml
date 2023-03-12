@@ -197,6 +197,7 @@ skills:
     - Unified Modeling Language (UML)
     - Software Development Life Cycles (SDLC)
     - Twelve-Factor Application Design
+    - Identity Lifecycle & Governance
     - Authentication (AuthN) & Authorization (AuthZ)
     - Multi-factor Authentication
   applications:

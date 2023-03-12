@@ -1,97 +1,99 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
     <title>Resume of {{name}} - {{summary.title}}</title>
+
     <link href="html.css" rel="stylesheet" />
 </head>
 
 <body>
-    <blockquote>
-        <span class="name">{{name}}</span>
-        <span class="linkedin"><a href="{{linkedin}}" target="_new">{{linkedin}}</a></span>
+    <span class="name">{{name}}</span>
+    <span class="linkedin"><a href="{{linkedin}}" target="_new">{{linkedin}}</a></span>
 
-        <br />
-        {{#with summary}}
-        <h2>{{title}}</h2>
+    <br />
+    {{#with summary}}
+    <h2>{{title}}</h2>
 
-        <div id="recap">
-            {{recap}}
-        </div>
+    <div id="recap">
+        {{recap}}
+    </div>
 
-        <div id="qualifications">
-            {{#each qualifications}}&bullet;{{.}}{{/each}}
-        </div>
-        {{/with}}
+    <div id="qualifications">
+        {{#each qualifications}}<div>&FilledVerySmallSquare;&nbsp;{{.}}</div>{{/each}}
+    </div>
+    {{/with}}
 
-        {{#each experience}}
-        <table>
-            <tbody>
-                <tr>
-                    <td colspan="2"><span class="company">{{company}}</span>&nbsp;(<span
-                            class="location">{{positions.[0].location}}</span>)</td>
-                </tr>
+    {{#each experience}}
+    <table>
+        <tbody>
+            <tr>
+                <td colspan="2"><span class="company">{{company}}</span>&nbsp;(<span
+                        class="location">{{positions.[0].location}}</span>)</td>
+            </tr>
 
-                {{#each positions}}
-                <tr>
-                    <td><span class="title">{{title}}</span>{{#if team}},&nbsp;<span class="team">{{team}}</span>{{/if}}
-                    </td>
-                    <td class="dateRange">{{from}}&nbsp;to&nbsp;{{#if to}}{{to}}{{else}}Present{{/if}}</td>
-                </tr>
+            {{#each positions}}
+            <tr>
+                <td><span class="title">{{title}}</span>{{#if team}},&nbsp;<span class="team">{{team}}</span>{{/if}}
+                </td>
+                <td class="dateRange">{{from}}&nbsp;to&nbsp;{{#if to}}{{to}}{{else}}Present{{/if}}</td>
+            </tr>
 
-                {{#each responsibilities}}
-                <tr>
-                    <td colspan="2">&bullet;&nbsp{{.}}</td>
-                </tr>
-                {{/each}}
+            {{#each responsibilities}}
+            <tr>
+                <td colspan="2">&bullet;&nbsp{{.}}</td>
+            </tr>
+            {{/each}}
 
-                {{/each}}
-            </tbody>
-        </table>
+            {{/each}}
+        </tbody>
+    </table>
+    {{/each}}
+
+    <h2>Awards, Accomplishments, Certifications</h2>
+    {{#if awards}}
+    <ul>
+        {{#each awards}}
+        <li><span class="issuer">{{from}}</span>:&nbsp;{{description}}&nbsp;({{when}})</li>
         {{/each}}
+        {{#each certifications}}
+        <li><span class="issuer">{{issuer}}</span>:&nbsp;{{title}}&nbsp;({{from}}{{#if
+            to}}&nbsp;to&nbsp;{{to}}{{/if}})
+        </li>
+        {{/each}}
+        {{#each publications}}
+        <li><span class="issuer">{{journal}}</span>:&nbsp;{{description}},&nbsp;<a href="{{url}}"
+                target="_new">{{citation}}</a>&nbsp;({{when}})</li>
+        {{/each}}
+    </ul>
+    {{/if}}
 
-        <h2>Awards, Accomplishments, Certifications</h2>
-        {{#if awards}}
-        <ul>
-            {{#each awards}}
-            <li><span class="issuer">{{from}}</span>:&nbsp;{{description}}&nbsp;({{when}})</li>
-            {{/each}}
-            {{#each certifications}}
-            <li><span class="issuer">{{issuer}}</span>:&nbsp;{{title}}&nbsp;({{from}}{{#if
-                to}}&nbsp;to&nbsp;{{to}}{{/if}})
-            </li>
-            {{/each}}
-            {{#each publications}}
-            <li><span class="issuer">{{journal}}</span>:&nbsp;{{description}},&nbsp;<a href="{{url}}"
-                    target="_new">{{citation}}</a>&nbsp;({{when}})</li>
-            {{/each}}
-        </ul>
-        {{/if}}
+    <h2>Technical Skills</h2>
+    <ul>
+        <li>Concepts:&nbsp;{{#each skills.concepts}}{{.}},&nbsp;{{/each}}</li>
+        <li>Applications:&nbsp;{{#each skills.applications}}{{.}},&nbsp;{{/each}}</li>
+        <li>Platforms:&nbsp;{{#each skills.platforms}}{{.}},&nbsp;{{/each}}</li>
+        <li>Databases:&nbsp;{{#each skills.databases}}{{.}},&nbsp;{{/each}}</li>
+        <li>Programming:&nbsp;{{#each skills.programming}}{{.}},&nbsp;{{/each}}</li>
+        <li>Operating&nbsp;Systems:&nbsp;{{#each skills.os}}{{.}},&nbsp;{{/each}}</li>
+    </ul>
 
-        <h2>Technical Skills</h2>
-        <ul>
-            <li>Concepts:&nbsp;{{#each skills.concepts}}{{.}},&nbsp;{{/each}}</li>
-            <li>Applications:&nbsp;{{#each skills.applications}}{{.}},&nbsp;{{/each}}</li>
-            <li>Platforms:&nbsp;{{#each skills.platforms}}{{.}},&nbsp;{{/each}}</li>
-            <li>Databases:&nbsp;{{#each skills.databases}}{{.}},&nbsp;{{/each}}</li>
-            <li>Programming:&nbsp;{{#each skills.programming}}{{.}},&nbsp;{{/each}}</li>
-            <li>Operating&nbsp;Systems:&nbsp;{{#each skills.os}}{{.}},&nbsp;{{/each}}</li>
-        </ul>
-
-        <h2>Education</h2>
-        <table>
-            <tbody>
-                {{#each education}}
-                <tr>
-                    <td colspan="2">{{school}}&nbsp;({{location}})</td>
-                </tr>
-                <tr>
-                    <td>{{degree}},&nbsp;{{subject}}</td>
-                    <td>{{from}}&nbsp;to&nbsp;{{to}}</td>
-                </tr>
-                {{/each}}
-            </tbody>
-        </table>
-    </blockquote>
+    <h2>Education</h2>
+    <table>
+        <tbody>
+            {{#each education}}
+            <tr>
+                <td colspan="2">{{school}}&nbsp;({{location}})</td>
+            </tr>
+            <tr>
+                <td>{{degree}},&nbsp;{{subject}}</td>
+                <td>{{from}}&nbsp;to&nbsp;{{to}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
 </body>
 
 </html>
