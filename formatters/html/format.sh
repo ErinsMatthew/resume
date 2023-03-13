@@ -20,9 +20,10 @@ dependencyCheck() {
     done
 }
 
-dependencyCheck "yq node"
+dependencyCheck "mktemp node realpath yq"
 
 JSON_TEMP_FILE=$(mktemp)
+TEMPLATE_FILE=$(realpath 'formatters/html/template.html.hb')
 
 # use yq to convert YAML to JSON
 yq . "$1" > "${JSON_TEMP_FILE}"
@@ -31,6 +32,6 @@ OUTPUT_DIR=$(dirname "$2")
 
 cp formatters/html/html.css "${OUTPUT_DIR}"
 
-node formatters/html/html.js "${JSON_TEMP_FILE}" > "$2"
+node formatters/html/html.js --json="${JSON_TEMP_FILE}" --template="${TEMPLATE_FILE}"> "$2"
 
 rm "${JSON_TEMP_FILE}"

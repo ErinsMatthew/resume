@@ -8,7 +8,7 @@ stackoverflow: https://stackoverflow.com/users/2647496/erinsmatthew
 
 summary:
   title: Strategic Information Security Technology Leader
-  recap: Skilled information security technology leader with twenty years of experience in software engineering, data analytics, reporting, process improvement, project management, strategic planning, and resource management. Highly effective at aligning business and technology partners through strategic planning, communication, relationship building, accountability, and collaboration. Energetic and optimistic self-starter with excellent analytical, problem solving and communications skills.
+  recap: Skilled information security leader with experience in software engineering, process improvement, project management, strategic planning, data analytics, reporting, and resource management. Highly effective at aligning business and technology partners through strategic planning, communication, relationship building, accountability, and collaboration. Energetic and optimistic self-starter with excellent analytical, problem solving and communications skills.
   qualifications:
     - Software Engineering
     - Information Security
@@ -27,20 +27,26 @@ experience:
         industryTitle: Principal Software Engineer
         team: Information Security Identity and Access Management
         location: Bentonville, Arkansas
-        from: 2020-01
+        from: 2020-10
         responsibilities:
-          - abc
-          - def
+          - Identity Lifecycle
+          - GAME
+          - IGA
+          - AuthN/AuthZ
+          - Mentored
+          - SailPoint IdentityIQ
+          - CI/CD Pipeline
+          - International Markets
 
       - title: Senior Technical Program Manager
         industryTitle: Senior Technical Program Manager
         team: Supplier and Spend Solutions
         location: Bentonville, Arkansas
         from: 2017-02
-        to: 2020-01
+        to: 2020-10
         responsibilities:
-          - Responsible for front-end innovations within the end-to-end supplier and spend solutions portfolio, which covers all indirect spend for all of Walmart (GNFR).
-          - Lead key efforts for process simplification and automation, including contractor onboarding, request management, reporting and analytics, global process alignment, and business planning.
+          - Led innovations in supplier and spend solutions portfolio, including indirect spend for all of Walmart (GNFR).
+          - Led process simplification and automation, including contractor onboarding, request management, reporting and analytics, global process alignment, and business planning.
           - Designed and oversaw implementation of reports and dashboards for indirect spend analytics.
 
       - title: Senior Technical Program Manager
@@ -51,10 +57,10 @@ experience:
         to: 2017-02
         responsibilities:
           - Led collaborative efforts to establish common tools and processes to capture key operational metrics for sourcing and contracting (S2C), procurement (P2P), and vendor management.
-          - Designed, developed, and deployed a new request management system named ProcureIt used by over one-hundred associates around the globe to manage their daily work and govern centralized processes such as finance, legal, sourcing, and procurement.
-          - Designed, developed, and deployed a streamlined, mobile-based application framework named iApprove which led to internal approvals of contracts, purchase requests, and other items decreasing from 4+ days to an average of hours.
-          - Led key efforts for process simplification and automation, including contractor onboarding, request management, reporting and analytics, global process alignment, and business planning.
-          - Oversaw the creation and development of an offshore reporting and analytics team. The success of this team was instrumental in the development and expansion of several other teams in the same office, which now has over fifty associates supporting multiple business segments.
+          - Designed, developed, and deployed a new request management system used by over one-hundred associates around the globe to manage their daily work and govern centralized processes such as finance, legal, sourcing, and procurement.
+          - Designed, developed, and deployed a streamlined, mobile-based application framework which led to internal approvals of contracts, purchase requests, and other items decreasing from 4+ days to an average of hours.
+          - Led process simplification and automation, including contractor onboarding, request management, reporting and analytics, global process alignment, and business planning.
+          - Oversaw the creation of an offshore reporting and analytics team. The success of this team was instrumental in the development and expansion of similar teams.
 
       - title: Senior Manager
         industryTitle: Senior Technical Manager
@@ -63,7 +69,7 @@ experience:
         from: 2011-04
         to: 2012-06
         responsibilities:
-          - Developed and led a team of project managers as part of new organizational and operating model.
+          - Developed and led a team of project managers as part of new organizational operating model.
           - Established a rapid response team responsible for quick wins.
           - Recruited and hired over 25 project managers based on skills and fit to culture.
 
@@ -113,7 +119,7 @@ experience:
         responsibilities:
           - Led the development and implementation of a business prospect management system for SAM'S CLUB.
           - Supported club associates in over 500 clubs on the use of the prospect management system.
-          - Hand-selected by senior leadership to lead two teams within a tiger team to address key issues facing developers within Walmart Technology.
+          - Hand-selected by senior executives to lead two tiger teams that addressed key issues facing developers within Walmart Technology.
 
       - title: Programmer Analyst
         industryTitle: Software Engineer
@@ -185,16 +191,15 @@ skills:
     - Organizational Change Management
     - Project Management
     - Portfolio Management
-    - IT Governance, Risk and Compliance (GRC CobiT)
+    - IT Governance Risk & Compliance (GRC CobiT)
     - Object-Oriented Programming
     - Microservices
     - Database Design
     - Web Programming
-    - Web Services (REST, JSON, SOAP)
+    - Web Services (REST & SOAP)
     - Data Analysis
     - Business Analysis
     - Unified Modeling Language (UML)
-    - Software Development Life Cycles (SDLC)
     - Twelve-Factor Application Design
     - Identity Lifecycle
     - Authentication (AuthN) & Authorization (AuthZ)
@@ -230,14 +235,18 @@ skills:
     - Microsoft Access (Jet)
     - Redis Cache
   programming:
+    - Java
     - Node.js
     - HTML5
+    - C#
     - JavaScript
     - AngularJS
-    - Java
+    - Python
+    - ANSI SQL
+    - Transact SQL
+    - PowerShell
     - Spring Framework
     - jQuery
-    - C#
     - Visual Basic .NET (VB.NET)
     - Visual Basic 6
     - ANSI C++
@@ -251,16 +260,11 @@ skills:
     - Visual Basic for Applications (VBA)
     - UNIX Shell (Bash)
     - Perl
-    - Python
-    - PowerShell
-    - ANSI SQL
-    - Transact SQL
     - COBOL
   os:
     - Microsoft Windows (Desktop & Server)
+    - Linux & UNIX
     - macOS
-    - UNIX
-    - Linux
     - OS/390
 
 education:
@@ -276,27 +280,28 @@ certifications:
     title: Project Management Professional (PMP®)
     from: 2007-11
     to: 2012-11
-  - issuer: International Information System Security Certification Consortium (ISC)2
-    title: Certified Information Systems Security Professional (CISSP ®)
+  #  - issuer: International Information System Security Certification Consortium (ISC)2
+  #    title: Certified Information Systems Security Professional (CISSP®)
+  #    from: TBD
   - issuer: Walmart
     title: Professional Project Leadership Series Certificate
     from: 2005-01
 
 awards:
   - from: Walmart
-    description: Awarded Team Innovations Award for design and implementation of ProcureIt and iApprove.
+    description: Team Innovations Award for design and implementation of ProcureIt and iApprove.
     when: 2016-02
   - from: Walmart
-    description: Awarded Excellence Award for design and implementation of ProcureIt and iApprove, and for leadership in process improvement within the Vendor Management Office.
+    description: Excellence Award for leadership in process improvement within the Vendor Management Office.
     when: 2016-02
   - from: Walmart
-    description: Awarded Paradigm Buster Team Award for changing the way Walmart Technology approached project management.
+    description: Paradigm Buster Team Award for changing the way Walmart Technology approached project management.
     when: 2008-02
   - from: Walmart
-    description: Awarded Genesis Award for being a rising star in Walmart Technology.
+    description: Genesis Award for being a rising star in Walmart Technology.
     when: 2003-04
   - from: Walmart
-    description: Awarded Kevin Turner Star Team Award, given to the Walmart Technology team of the year.
+    description: Kevin Turner Star Team Award, given to the Walmart Technology team of the year.
     when: 2003-04
   - from: Ozark Electronics Repair
     description: Recognized for excellence in customer service.
