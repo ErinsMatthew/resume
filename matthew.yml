@@ -27,23 +27,21 @@ experience:
         industryTitle: Principal Software Engineer
         team: Information Security Identity and Access Management
         location: Bentonville, Arkansas
-        from: 2020-10
+        from: 2018-10
         responsibilities:
-          - Identity Lifecycle
-          - GAME
-          - IGA
-          - AuthN/AuthZ
-          - Mentored
-          - SailPoint IdentityIQ
-          - CI/CD Pipeline
-          - International Markets
+          - Technical lead for global initiative to onboard global markets to a standard identity lifecycle management tool.
+          - Technical lead for Walmart's Microsoft Identity Manager (MIM) instances allowing for the automated management of 2.2+ million primary and elevated credentials.
+          - Designed and developed a continuous deployment (CD) pipeline for Walmart's SailPoint IdentityIQ instance using in-house and third-party tools.
+          - Help establish strategic plans, development standards, and technical designs for Walmart's identity and access management portfolio.
+          - Support Walmart's globals markets and businesses with identity and access management efforts and maturity.
+          - Mentor engineers and project managers in areas of technology, business, and organizational culture.
 
       - title: Senior Technical Program Manager
         industryTitle: Senior Technical Program Manager
         team: Supplier and Spend Solutions
         location: Bentonville, Arkansas
         from: 2017-02
-        to: 2020-10
+        to: 2018-10
         responsibilities:
           - Led innovations in supplier and spend solutions portfolio, including indirect spend for all of Walmart (GNFR).
           - Led process simplification and automation, including contractor onboarding, request management, reporting and analytics, global process alignment, and business planning.
