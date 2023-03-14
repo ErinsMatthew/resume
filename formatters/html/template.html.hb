@@ -12,7 +12,7 @@
 <body>
     <header>
         <span class="name">{{name}}</span>
-        <span class="linkedin">&lt;{{cleanLink linkedin}}&gt;</span>
+        <span class="linkedin">&lt;{{getProfileUrl profiles 'linkedin'}}&gt;</span>
     </header>
 
     <hr />

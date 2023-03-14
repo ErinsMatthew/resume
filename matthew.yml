@@ -2,9 +2,13 @@
 name: Matthew W. Foster
 preferredName: Matthew
 email: resume@matthewanderin.com
-linkedin: https://www.linkedin.com/in/matthew-foster-infosec/
-github: https://github.com/ErinsMatthew
-stackoverflow: https://stackoverflow.com/users/2647496/erinsmatthew
+profiles:
+  - type: linkedin
+    url: https://www.linkedin.com/in/matthew-foster-infosec/
+  - type: github
+    url: https://github.com/ErinsMatthew
+  - type: stackoverflow
+    url: https://stackoverflow.com/users/2647496/erinsmatthew
 
 summary:
   title: Strategic Information Security Technology Leader

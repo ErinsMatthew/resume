@@ -30,14 +30,25 @@ Handlebars.registerHelper( 'dateRange', function ( fromString, toString ) {
     return new Handlebars.SafeString( rangeString );
 } );
 
-Handlebars.registerHelper( 'cleanLink', function ( urlString ) {
+function cleanLink( urlString ) {
     let link = [ '<a href="', urlString, '" target="_new">' ];
 
     let url = new URL( urlString );
 
     link.push( url.host, url.pathname, url.search, '</a>' );
 
-    return new Handlebars.SafeString( link.join( EMPTY_STRING ) );
+    return link.join( EMPTY_STRING );
+}
+
+Handlebars.registerHelper( 'cleanLink', function ( urlString ) {
+    return new Handlebars.SafeString( cleanLink( urlString ) );
+} );
+
+Handlebars.registerHelper( 'getProfileUrl', function ( items, type ) {
+    return new Handlebars.SafeString( cleanLink( items
+        .filter( i => i.type === type )
+        .map( i => i.url )
+        .shift() ) );
 } );
 
 Handlebars.registerHelper( 'join', function ( items, options ) {
