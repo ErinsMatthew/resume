@@ -3,6 +3,8 @@ const Handlebars = require( 'handlebars' );
 const dayjs = require( 'dayjs' );
 const argv = require( 'minimist' )( process.argv.slice( 2 ) );
 
+const EMPTY_STRING = '';
+
 const GLOBALS = {
     DATE_FORMAT: argv.format || 'MMMM YYYY',
     FILE_ENCODING: argv.encoding || 'utf8',
@@ -19,18 +21,13 @@ Handlebars.registerHelper( 'date', function ( dateString ) {
 } );
 
 Handlebars.registerHelper( 'dateRange', function ( fromString, toString ) {
-    let range = [];
+    let rangeString = [
+        formatDate( fromString ),
+        '&nbsp;to&nbsp;',
+        toString ? formatDate( toString ) : 'Present'
+    ].join( EMPTY_STRING );
 
-    range.push( formatDate( fromString ) );
-    range.push( '&nbsp;to&nbsp;' );
-
-    if ( toString ) {
-        range.push( formatDate( toString ) );
-    } else {
-        range.push( 'Present' );
-    }
-
-    return new Handlebars.SafeString( range.join( '' ) );
+    return new Handlebars.SafeString( rangeString );
 } );
 
 Handlebars.registerHelper( 'cleanLink', function ( urlString ) {
@@ -38,11 +35,9 @@ Handlebars.registerHelper( 'cleanLink', function ( urlString ) {
 
     let url = new URL( urlString );
 
-    link.push( url.host, url.pathname, url.search );
+    link.push( url.host, url.pathname, url.search, '</a>' );
 
-    link.push( '</a>' );
-
-    return new Handlebars.SafeString( link.join( '' ) );
+    return new Handlebars.SafeString( link.join( EMPTY_STRING ) );
 } );
 
 Handlebars.registerHelper( 'join', function ( items, options ) {
@@ -50,7 +45,7 @@ Handlebars.registerHelper( 'join', function ( items, options ) {
 } );
 
 Handlebars.registerHelper( 'colbreak', function ( index ) {
-    return new Handlebars.SafeString( index % GLOBALS.QUALIFICATION_COLUMNS == ( GLOBALS.QUALIFICATION_COLUMNS - 1 ) ? '</td><td>' : '' );
+    return new Handlebars.SafeString( index % GLOBALS.QUALIFICATION_COLUMNS == ( GLOBALS.QUALIFICATION_COLUMNS - 1 ) ? '</td><td>' : EMPTY_STRING );
 } );
 
 const template = Handlebars.compile( fs.readFileSync( argv.template, GLOBALS.FILE_ENCODING ) );
