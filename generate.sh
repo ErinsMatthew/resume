@@ -164,7 +164,7 @@ performSetup() {
 
     setDefaults
 
-    dependencyCheck "cat find realpath"
+    dependencyCheck "cat find realpath sed tr xargs"
 }
 
 formatResume() {

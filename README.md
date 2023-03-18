@@ -40,6 +40,9 @@ converts the input to the output is up to it to determine.
 - `cat` - pre-installed with macOS and most Linux distributions
 - `find` - pre-installed with macOS and most Linux distributions
 - `realpath` - install via coreutils using [Homebrew](https://formulae.brew.sh/formula/coreutils), another package manager, or [manually](https://www.gnu.org/software/coreutils/).
+- `sed` - pre-installed with macOS and most Linux distributions
+- `tr` - pre-installed with macOS and most Linux distributions
+- `xargs` - pre-installed with macOS and most Linux distributions
 
 Formatters may have their own dependencies.
 
