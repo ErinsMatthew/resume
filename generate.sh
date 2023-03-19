@@ -54,6 +54,10 @@ loadValidFormatters() {
 }
 
 processOptions() {
+    local FLAG
+    local OPTARG
+    local OPTIND
+
     [[ $# -eq 0 ]] && usage
 
     while getopts ":b:df:hi:" FLAG; do
