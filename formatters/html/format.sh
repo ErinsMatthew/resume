@@ -23,7 +23,7 @@ dependencyCheck() {
 dependencyCheck "mktemp node realpath yq"
 
 JSON_TEMP_FILE=$(mktemp)
-TEMPLATE_FILE=$(realpath 'formatters/html/template.html.hb')
+TEMPLATE_FILE=$(realpath 'formatters/html/template.html.hbs')
 
 # use yq to convert YAML to JSON
 yq . "$1" > "${JSON_TEMP_FILE}"
