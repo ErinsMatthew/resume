@@ -20,7 +20,7 @@ dependencyCheck() {
     done
 }
 
-dependencyCheck "wkhtmltopdf"
+dependencyCheck "wkhtmltopdf yq"
 
 # format YAML as HTML
 TEMP_DIR=$(mktemp -d)
@@ -31,7 +31,15 @@ HTML_TEMP_FILE=${TEMP_DIR}/resume.html
 
 formatters/html/format.sh "$1" "${HTML_TEMP_FILE}"
 
+# build footer
+FOOTER="[Resume of $(yq -r '.name' "$1"), Page [page] of [topage]]"
+
 # convert temporary HTML file to PDF
-wkhtmltopdf --enable-local-file-access --log-level error "${HTML_TEMP_FILE}" "$2"
+wkhtmltopdf \
+  --enable-local-file-access \
+  --log-level error \
+  --footer-right "${FOOTER}" \
+  --footer-font-size 8 \
+  "${HTML_TEMP_FILE}" "$2"
 
 rm -r "${TEMP_DIR}"
