@@ -4,6 +4,7 @@ const dayjs = require( 'dayjs' );
 const argv = require( 'minimist' )( process.argv.slice( 2 ) );
 
 const EMPTY_STRING = '';
+const SLASH = '/';
 
 const GLOBALS = {
     DATE_FORMAT: argv.format || 'MMMM YYYY',
@@ -30,25 +31,42 @@ Handlebars.registerHelper( 'dateRange', function ( fromString, toString ) {
     return new Handlebars.SafeString( rangeString );
 } );
 
-function cleanLink( urlString ) {
+function removeTrailingSlash( text ) {
+    let edited = text;
+
+    if ( text.slice( -1 ) === SLASH ) {
+        edited = text.slice( 0, -1 );
+    }
+
+    return edited;
+}
+
+function cleanLink( urlString, display ) {
     let link = [ '<a href="', urlString, '" target="_new">' ];
 
-    let url = new URL( urlString );
+    if ( !!display ) {
+        link.push( display );
+    } else {
+        let url = new URL( urlString );
 
-    link.push( url.host, url.pathname, url.search, '</a>' );
+        link.push( removeTrailingSlash( [ url.host, url.pathname, url.search ].join( EMPTY_STRING ) ) );
+    }
+
+    link.push( '</a>' );
 
     return link.join( EMPTY_STRING );
 }
 
 Handlebars.registerHelper( 'cleanLink', function ( urlString ) {
-    return new Handlebars.SafeString( cleanLink( urlString ) );
+    return new Handlebars.SafeString( cleanLink( urlString, null ) );
 } );
 
 Handlebars.registerHelper( 'getProfileUrl', function ( items, type ) {
-    return new Handlebars.SafeString( cleanLink( items
+    let profileItem = items
         .filter( i => i.type === type )
-        .map( i => i.url )
-        .shift() ) );
+        .shift();
+
+    return new Handlebars.SafeString( cleanLink( profileItem.url, profileItem.display ) );
 } );
 
 Handlebars.registerHelper( 'join', function ( items, options ) {
