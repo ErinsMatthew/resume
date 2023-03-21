@@ -29,17 +29,18 @@ cp formatters/html/html.css "${TEMP_DIR}"
 
 HTML_TEMP_FILE=${TEMP_DIR}/resume.html
 
-formatters/html/format.sh "$1" "${HTML_TEMP_FILE}"
+YAML_SOURCE_FILE="$1"
 
-# build footer
-FOOTER="[Resume of $(yq -r '.name' "$1"), Page [page] of [topage]]"
+formatters/html/format.sh "${YAML_SOURCE_FILE}" "${HTML_TEMP_FILE}"
+
+source formatters/pdf/headers_footers.sh
 
 # convert temporary HTML file to PDF
-wkhtmltopdf \
+eval wkhtmltopdf \
   --enable-local-file-access \
   --log-level error \
-  --footer-right "${FOOTER}" \
-  --footer-font-size 8 \
+  "${FOOTER_OPTIONS}" \
+  "${HEADER_OPTIONS}" \
   "${HTML_TEMP_FILE}" "$2"
 
 rm -r "${TEMP_DIR}"
