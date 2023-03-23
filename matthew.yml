@@ -75,8 +75,8 @@ experience:
         to: 2012-06
         responsibilities:
           - Developed and led a team of project managers as part of new organizational operating model.
-          - Established a rapid response team responsible for quick wins.
-          - Recruited and hired over 25 project managers based on skills and fit to culture.
+          # - Established a rapid response team responsible for quick wins.
+          - Recruited, hired, and on-boarded over 25 project managers based on skills and fit to culture.
 
       - title: Manager & Senior Manager
         industryTitle: Senior Technical Manager
@@ -89,7 +89,7 @@ experience:
           - Developed and led a team responsible for governance of project management processes across Walmart Technology.
           - Mentored and trained Walmart associates in project management processes and techniques.
           - Developed strategies and roadmaps for the ongoing maturation of Walmart Technology's PMO.
-          - Developed and led a team responsible for Walmart's information systems development life cycle (ISDLC).
+          # - Developed and led a team responsible for Walmart's information systems development life cycle (ISDLC).
           - Established a PMO Round Table to coordinate with other newly formed PMOs across Walmart.
           - Oversaw the development of an updated, modularized project management training series.
           - Defined a formalized project management career path within Walmart Technology.
