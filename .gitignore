@@ -9,6 +9,8 @@ lerna-debug.log*
 
 output/
 
+.internal/
+
 .DS_Store
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
