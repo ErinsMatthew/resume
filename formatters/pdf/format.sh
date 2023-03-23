@@ -39,6 +39,7 @@ source formatters/pdf/headers_footers.sh
 eval wkhtmltopdf \
   --enable-local-file-access \
   --log-level error \
+  --page-size Letter \
   "${FOOTER_OPTIONS}" \
   "${HEADER_OPTIONS}" \
   "${HTML_TEMP_FILE}" "$2"

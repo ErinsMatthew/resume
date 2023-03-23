@@ -29,14 +29,15 @@
 #                                       footer (repeatable)
 
 CANDIDATE_NAME=$(yq -r '.name' "${YAML_SOURCE_FILE}")
+CANDIDATE_EMAIL=$(yq -r '.email' "${YAML_SOURCE_FILE}")
 
 buildFooterOptions() {
     local FOOTER_CENTER=''
     local FOOTER_FONT_NAME=''
-    local FOOTER_FONT_SIZE='8'
+    local FOOTER_FONT_SIZE='6'
     local FOOTER_HTML=''
-    local FOOTER_LEFT=''
-    local FOOTER_RIGHT="[Resume of ${CANDIDATE_NAME}, Page [page] of [topage]]"
+    local FOOTER_LEFT="${CANDIDATE_NAME} <${CANDIDATE_EMAIL}>"
+    local FOOTER_RIGHT='Page [page] of [topage]'
     local FOOTER_SPACING=''
     local FOOTER_LINE='false'
 
