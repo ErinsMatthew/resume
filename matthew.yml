@@ -33,11 +33,13 @@ experience:
         location: Bentonville, Arkansas
         from: 2018-10
         responsibilities:
-          - Technical lead for global initiative to onboard global markets to a standard identity lifecycle management tool.
+          - Technical lead for initiative to onboard global markets to a standard identity lifecycle management tool.
           - Technical lead for Walmart's Microsoft Identity Manager (MIM) instances allowing for the automated management of 2.2+ million primary and elevated credentials.
           - Designed and developed a continuous deployment (CD) pipeline for Walmart's SailPoint IdentityIQ instance using in-house and third-party tools.
-          - Help establish strategic plans, development standards, and technical designs for Walmart's identity and access management portfolio.
-          - Support Walmart's globals markets and businesses with identity and access management efforts and maturity.
+          - Help establish strategic plans, roadmaps, development standards, and technical designs for Walmart's identity and access management portfolio.
+          - Support Walmart's global markets and businesses with identity and access management efforts and maturity.
+          - Supported identity and access management products, ensuring quality in all phases from development to production.
+          - Led process improvement efforts around coding standards, product documentation, operational excellence, and automation, all while maintaining a security first mindset.
           - Mentor engineers and project managers in areas of technology, business, and organizational culture.
 
       - title: Senior Technical Program Manager
@@ -61,6 +63,7 @@ experience:
           - Led collaborative efforts to establish common tools and processes to capture key operational metrics for sourcing and contracting (S2C), procurement (P2P), and vendor management.
           - Designed, developed, and deployed a new request management system used by over one-hundred associates around the globe to manage their daily work and govern centralized processes such as finance, legal, sourcing, and procurement.
           - Designed, developed, and deployed a streamlined, mobile-based application framework which led to internal approvals of contracts, purchase requests, and other items decreasing from 4+ days to an average of hours.
+          - Supported indirect spend management products from development to production.
           - Led process simplification and automation, including contractor onboarding, request management, reporting and analytics, global process alignment, and business planning.
           - Oversaw the creation of an offshore reporting and analytics team. The success of this team was instrumental in the development and expansion of similar teams.
 
@@ -84,7 +87,7 @@ experience:
         responsibilities:
           - Recruited to lead the formation of a PMO within Walmart Technology, the first formal PMO at Walmart.
           - Developed and led a team responsible for governance of project management processes across Walmart Technology.
-          - Mentored Walmart associates in project management processes and techniques.
+          - Mentored and trained Walmart associates in project management processes and techniques.
           - Developed strategies and roadmaps for the ongoing maturation of Walmart Technology's PMO.
           - Developed and led a team responsible for Walmart's information systems development life cycle (ISDLC).
           - Established a PMO Round Table to coordinate with other newly formed PMOs across Walmart.
@@ -109,7 +112,7 @@ experience:
         from: 2004-02
         to: 2006-10
         responsibilities:
-          - Planned, managed and developed Web-based systems on Retail Link, Walmart's B2B supplier portal.
+          - Planned, managed, and developed Web-based systems on Retail Link, Walmart's B2B supplier portal.
           - Mentored peers in areas of technology, business, and organizational culture.
 
       - title: Senior Programmer Analyst
@@ -195,12 +198,15 @@ skills:
     - Portfolio Management
     - IT Governance Risk & Compliance (GRC CobiT)
     - Object-Oriented Programming
+    - Web Security (e.g., OWASP)
     - Microservices
     - Database Design
     - Web Programming
     - Web Services (REST & SOAP)
     - Data Analysis
     - Business Analysis
+    - Technical Architecture & Design
+    - Zachman Framework
     - Unified Modeling Language (UML)
     - Twelve-Factor Application Design
     - Identity Lifecycle
