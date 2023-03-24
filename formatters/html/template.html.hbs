@@ -42,7 +42,8 @@
         <table class="positions">
             <tbody>
                 <tr>
-                    <td><span class="title">{{title}}</span>{{#if
+                    <td><span class="title">{{#if
+                            industryTitle}}{{industryTitle}}{{else}}{{title}}{{/if}}</span>{{#if
                         team}}&nbsp;&ndash;&nbsp;<span class="team">{{team}}</span>{{/if}}</td>
                     <td class="position_duration">{{dateRange from to}}</td>
                 </tr>
