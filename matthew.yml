@@ -45,13 +45,13 @@ experience:
 
       - title: Senior Technical Program Manager
         industryTitle: Senior Technical Program Manager
-        team: Indirect Spend Management & Vendor Management
+        team: Indirect Spend & Vendor Management
         location: Bentonville, Arkansas
         from: 2012-06
         to: 2018-10
         responsibilities:
           - Led collaborative efforts to establish common tools and processes to capture key operational metrics for sourcing and contracting (S2C), procurement (P2P), and vendor management.
-          - Designed, developed, and deployed a new request management system used by over one-hundred associates around the globe to manage their daily work and govern centralized processes such as finance, legal, sourcing, and procurement.
+          - Designed, developed, and deployed a custom request management system used by over one-hundred associates around the globe to manage their daily work and govern centralized processes such as finance, legal, sourcing, and procurement.
           - Designed, developed, and deployed a streamlined, mobile-based application framework which led to internal approvals of contracts, purchase requests, and other items decreasing from 4+ days to an average of hours.
           - Supported indirect spend management products from development to production.
           - Led innovations in supplier and spend solutions portfolio, including indirect spend for all of Walmart (GNFR).
@@ -60,7 +60,7 @@ experience:
           - Oversaw the creation of an offshore reporting and analytics team. The success of this team was instrumental in the development and expansion of similar teams.
 
       - title: Senior Manager
-        industryTitle: Senior Technical Manager
+        industryTitle: Senior Manager
         team: Infrastructure Project Delivery
         location: Bentonville, Arkansas
         from: 2011-04
@@ -71,7 +71,7 @@ experience:
           - Recruited, hired, and on-boarded over 25 project managers based on skills and fit to culture.
 
       - title: Manager & Senior Manager
-        industryTitle: Senior Technical Manager
+        industryTitle: Senior Manager
         team: Program Management Office (PMO)
         location: Bentonville, Arkansas
         from: 2007-02
@@ -81,7 +81,6 @@ experience:
           - Developed and led a team responsible for governance of project management processes across Walmart Technology.
           - Mentored and trained Walmart associates in project management processes and techniques.
           - Developed strategies and roadmaps for the ongoing maturation of Walmart Technology's PMO.
-          # - Developed and led a team responsible for Walmart's information systems development life cycle (ISDLC).
           - Established a PMO Round Table to coordinate with other newly formed PMOs across Walmart.
           - Oversaw the development of an updated, modularized project management training series.
           - Defined a formalized project management career path within Walmart Technology.
@@ -107,26 +106,18 @@ experience:
           - Planned, managed, and developed Web-based systems on Retail Link, Walmart's B2B supplier portal.
           - Mentored peers in areas of technology, business, and organizational culture.
 
-      - title: Senior Programmer Analyst
-        industryTitle: Senior Software Engineer
-        team: Customer Analysis and Behavior
-        location: Bentonville, Arkansas
-        from: 2003-05
-        to: 2004-02
-        responsibilities:
-          - Led the development and implementation of a business prospect management system for SAM'S CLUB.
-          - Supported club associates in over 500 clubs on the use of the prospect management system.
-          - Hand-selected by senior executives to lead two tiger teams that addressed key issues facing developers within Walmart Technology.
-
-      - title: Programmer Analyst
-        industryTitle: Software Engineer
+      - title: Programmer Analyst & Senior Programmer Analyst
+        industryTitle: Software Engineer & Senior Software Engineer
         team: Customer Analysis and Behavior
         location: Bentonville, Arkansas
         from: 2001-05
-        to: 2003-05
+        to: 2004-02
         responsibilities:
           - Performed ad hoc analysis of customer buying trends.
           - Developed and supported solutions to manage competitive shopping information.
+          - Led the development and implementation of a business prospect management system for SAM'S CLUB.
+          - Supported associates in over 500 clubs on use of prospect management system.
+          - Hand-selected by senior executives to lead two tiger teams that addressed key issues facing developers within Walmart Technology.
 
   - company: Ozark Electronics Repair (OERI)
     positions:
