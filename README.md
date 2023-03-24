@@ -18,6 +18,9 @@ $ generate.sh -h
 
 # generate a PDF version of resume.yml and output to current directory
 $ generate.sh -d -i resume.yml -f pdf .
+
+# or watch for changes using [nodemon](https://nodemon.io/) while polishing your resume
+$ nodemon --exec "./generate.sh -f pdf output" -e "yml sh css hbs" -i output
 ```
 
 ## Formatters
