@@ -35,36 +35,28 @@ experience:
         responsibilities:
           - Technical lead for initiative to onboard global markets to a standard identity lifecycle management tool.
           - Technical lead for Walmart's Microsoft Identity Manager (MIM) instances allowing for the automated management of 2.2+ million primary and elevated credentials.
-          - Designed and developed a continuous deployment (CD) pipeline for Walmart's SailPoint IdentityIQ instance using in-house and third-party tools.
+          - Designed and developed an automated continuous integration and deployment (CI/CD) pipeline for Walmart's SailPoint IdentityIQ instance using in-house and third-party tools.
           - Help establish strategic plans, roadmaps, development standards, and technical designs for Walmart's identity and access management portfolio.
-          - Support Walmart's global markets and businesses with identity and access management efforts and maturity.
+          - Support Walmart's global markets and businesses with identity and access management policies and standards enforcement, project delivery, and security posture maturity.
           - Supported identity and access management products, ensuring quality in all phases from development to production.
+          - Partnered with portfolio management and resource management teams to ensure that business needs were being met by ensuring the ongoing effectiveness of current plans, programs, and initiatives.
           - Led process improvement efforts around coding standards, product documentation, operational excellence, and automation, all while maintaining a security first mindset.
           - Mentor engineers and project managers in areas of technology, business, and organizational culture.
 
       - title: Senior Technical Program Manager
         industryTitle: Senior Technical Program Manager
-        team: Supplier and Spend Solutions
-        location: Bentonville, Arkansas
-        from: 2017-02
-        to: 2018-10
-        responsibilities:
-          - Led innovations in supplier and spend solutions portfolio, including indirect spend for all of Walmart (GNFR).
-          - Led process simplification and automation, including contractor onboarding, request management, reporting and analytics, global process alignment, and business planning.
-          - Designed and oversaw implementation of reports and dashboards for indirect spend analytics.
-
-      - title: Senior Technical Program Manager
-        industryTitle: Senior Technical Program Manager
-        team: Vendor Management Office (VMO)
+        team: Indirect Spend Management & Vendor Management
         location: Bentonville, Arkansas
         from: 2012-06
-        to: 2017-02
+        to: 2018-10
         responsibilities:
           - Led collaborative efforts to establish common tools and processes to capture key operational metrics for sourcing and contracting (S2C), procurement (P2P), and vendor management.
           - Designed, developed, and deployed a new request management system used by over one-hundred associates around the globe to manage their daily work and govern centralized processes such as finance, legal, sourcing, and procurement.
           - Designed, developed, and deployed a streamlined, mobile-based application framework which led to internal approvals of contracts, purchase requests, and other items decreasing from 4+ days to an average of hours.
           - Supported indirect spend management products from development to production.
+          - Led innovations in supplier and spend solutions portfolio, including indirect spend for all of Walmart (GNFR).
           - Led process simplification and automation, including contractor onboarding, request management, reporting and analytics, global process alignment, and business planning.
+          - Designed and oversaw implementation of reports and dashboards for indirect spend analytics.
           - Oversaw the creation of an offshore reporting and analytics team. The success of this team was instrumental in the development and expansion of similar teams.
 
       - title: Senior Manager
@@ -200,6 +192,8 @@ skills:
     - Object-Oriented Programming
     - Web Security (e.g., OWASP)
     - Microservices
+    - Middleware
+    - Extraction Transformation & Loading (ETL)
     - Database Design
     - Web Programming
     - Web Services (REST & SOAP)
@@ -216,15 +210,18 @@ skills:
     - Microsoft Office Suite
     - Microsoft Access
     - Microsoft Project
+    - Jira
+    - Confluence
+    - Visual Studio
+    - Visual Studio Code
+    - IntelliJ IDEA
     - CA Clarity PPM
     - Microsoft SharePoint
     - CA Identity Manager (IDM)
     - Microsoft Identity Manager (MIM)
     - SailPoint IdentityIQ (IIQ)
-    - Jira
-    - Confluence
-    - Visual Studio
-    - Visual Studio Code
+    - Apache Maven
+    - Apache Tomcat
   platforms:
     - Docker
     - Git
@@ -246,30 +243,32 @@ skills:
   programming:
     - Java
     - Node.js
-    - HTML5
+    - HTML
     - C#
+    - UNIX Shell (Bash)
     - JavaScript
     - AngularJS
-    - Python
+    - jQuery
+    - ASP
+    - ASP.NET
     - ANSI SQL
     - Transact SQL
     - PowerShell
     - Spring Framework
-    - jQuery
     - Visual Basic .NET (VB.NET)
     - Visual Basic 6
-    - ANSI C++
     - ANSI C
+    - ANSI C++
     - Visual C++
     - XML
     - MATLAB
-    - ASP
-    - ASP.NET
     - COM+
     - Visual Basic for Applications (VBA)
-    - UNIX Shell (Bash)
     - Perl
+    - Python
     - COBOL
+    - TeX
+    - Assembler (x86, Motorola)
   os:
     - Microsoft Windows (Desktop & Server)
     - Linux & UNIX
