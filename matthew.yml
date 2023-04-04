@@ -12,7 +12,7 @@ profiles:
 
 summary:
   title: Strategic Information Security Technology Leader
-  recap: Skilled information security leader with experience in software engineering, process improvement, project management, strategic planning, data analytics, reporting, and resource management. Highly effective at aligning business and technology partners through strategic planning, communication, relationship building, accountability, and collaboration. Energetic and optimistic self-starter with excellent analytical, problem solving and communications skills.
+  recap: Skilled identity and access management security leader with experience in software engineering, process improvement, project management, strategic planning, data analytics, and resource management. Highly effective at aligning business and technology partners through strategic planning, communication, relationship building, collaboration, and accountability. Energetic and optimistic self-starter with excellent analytical, problem solving and communications skills.
   qualifications:
     - Software Engineering
     - Information Security
@@ -213,6 +213,7 @@ skills:
     - SailPoint IdentityIQ (IIQ)
     - Apache Maven
     - Apache Tomcat
+    - Sonatype Nexus
   platforms:
     - Docker
     - Git
