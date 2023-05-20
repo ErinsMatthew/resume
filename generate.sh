@@ -7,7 +7,7 @@ shopt -s extglob
 
 usage() {
     cat << EOT 1>&2
-Usage: generate.sh [-d] [-f fmt] [-b basename] dir
+Usage: generate.sh [-dh] [-b basename] [-f fmt] [-i fn] dir
 
 OPTIONS
 =======

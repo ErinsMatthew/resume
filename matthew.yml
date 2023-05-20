@@ -33,8 +33,8 @@ experience:
         location: Bentonville, Arkansas
         from: 2018-10
         responsibilities:
-          - Technical lead for initiative to onboard global markets to a standard identity lifecycle management tool.
-          - Technical lead for Walmart's Microsoft Identity Manager (MIM) instances allowing for the automated management of 2.2+ million primary and elevated credentials.
+          - Technical architect for initiative to onboard global markets to a standard identity lifecycle management tool.
+          - Technical architect for Walmart's Microsoft Identity Manager (MIM) instances allowing for the automated management of 2.2+ million primary and elevated credentials.
           - Designed and developed an automated continuous integration and deployment (CI/CD) pipeline for Walmart's SailPoint IdentityIQ instance using in-house and third-party tools.
           - Help establish strategic plans, roadmaps, development standards, and technical designs for Walmart's identity and access management portfolio.
           - Support Walmart's global markets and businesses with identity and access management policies and standards enforcement, project delivery, and security posture maturity.
