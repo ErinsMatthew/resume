@@ -196,7 +196,7 @@ skills:
     - Twelve-Factor Application Design
     - Identity Lifecycle
     - Authentication (AuthN) & Authorization (AuthZ)
-    - Multifactor Authentication
+    - Multi-factor Authentication
   applications:
     - Microsoft Office Suite
     - Microsoft Access
@@ -280,9 +280,10 @@ certifications:
     title: Project Management Professional (PMP®)
     from: 2007-11
     to: 2012-11
-  #  - issuer: International Information System Security Certification Consortium (ISC)2
-  #    title: Certified Information Systems Security Professional (CISSP®)
-  #    from: TBD
+  - issuer: International Information System Security Certification Consortium (ISC)2
+    title: Certified Information Systems Security Professional (CISSP®)
+    id: 1884786
+    from: 2024-01
   - issuer: Walmart
     title: Professional Project Leadership Series Certificate
     from: 2005-01
